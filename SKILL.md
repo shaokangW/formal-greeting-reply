@@ -11,8 +11,8 @@ Use this skill for greeting-first messages. Do not improvise the greeting reply 
 
 1. Run the greeting matcher with the raw user message:
 
-```powershell
-python "C:\Users\wsk\.codex\skills\formal-greeting-reply\scripts\match_greeting.py" --text "<user-message>"
+```
+python "~\skills\formal-greeting-reply\scripts\match_greeting.py" --text "<user-message>"
 ```
 
 2. Read the JSON returned by the script.
