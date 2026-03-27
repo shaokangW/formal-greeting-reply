@@ -1,4 +1,4 @@
-![9d11bd8d241606adddc5d34b7f362381](https://github.com/user-attachments/assets/bee7e372-ff9c-4ba7-bdf3-34634024219f)---
+---
 name: formal-greeting-reply
 description: Detect greeting-only or greeting-led user messages such as "你好", "您好", "hello", "hi", "早上好", "下午好", "晚上好", or similar casual salutations, run `scripts/match_greeting.py` to classify the greeting with regex, and return the specific formal enhanced greeting produced by the script. Use when a user opens with a greeting and the reply should be standardized, formal, and deterministic.
 ---
